@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Muliple Counter Application</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- import redux from cdn -->
+        <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    </head>
+    <body>
+        <div class="w-screen bg-slate-500 py-2 text-slate-200">
+            <!-- header -->
+            <div class="p-2">
+                <h1 class="max-w-md mx-auto text-center text-2xl font-bold">
+                    Simple Counter Application
+                </h1>
+            </div>
+        </div>
+        <div class="w-screen p-10 bg-gray-100 text-slate-700" id="counterArea">
+            <!-- counters -->
+            <div class="mx-auto max-w-md mt-10 space-y-5">
+                <div
+                    class="p-4 h-auto flex flex-col items-center justify-center space-y-5 bg-white rounded shadow"
+                >
+                    <div id="counter" class="text-2xl font-semibold"></div>
+                    <div class="flex space-x-3">
+                        <button
+                            id="increment"
+                            class="bg-indigo-400 text-white px-3 py-2 rounded shadow"
+                        >
+                            Increment
+                        </button>
+                        <button
+                            id="decrement"
+                            class="bg-red-400 text-white px-3 py-2 rounded shadow"
+                        >
+                            Decrement
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add or Reset Counter -->
+        <div class="w-screen bg-gray-100 text-slate-700">
+            <div class="mx-auto max-w-md mt-2 space-y-5">
+                <div class="flex space-x-3 justify-end">
+                    <button
+                        class="bg-indigo-400 text-white px-3 py-2 rounded shadow"
+                        id="addCounter"
+                    >
+                        + Add Counter</button
+                    ><button
+                        class="bg-red-400 text-white px-3 py-2 rounded shadow"
+                        id="resetCounter"
+                    >
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="./script/app.js"></script>
+    </body>
+</html>
